@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('../assets/Futura\ LDR.ttf');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+body {
+    --color1: hsl(0, 100%, 69%);
+    --color2: #e45d5d;
+    --color3: black;
+    --color4: orange;
+    --color5: rgb(255, 241, 195);
+
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    /* --color1: hsla(349, 69%, 76%, 1);
+    --color2: hsla(207, 67%, 44%, 1);
+    --color3: hsla(200, 61%, 56%, 1);
+    --color4: hsla(187, 41%, 94%, 1);
+    --color5: hsla(170, 28%, 95%, 1); */
+
+    /* --color1: hsla(45, 86%, 83%, 1);
+    --color2: hsla(135, 65%, 98%, 1);
+    --color3: hsla(315, 37%, 86%, 1);
+    --color4: hsla(45, 73%, 98%, 1);
+    --color5: hsla(224, 40%, 79%, 1); */
+    
+    --header-height: 8px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 2px;
+    
+    font-family: 'Futura', sans-serif;
+    font-size: 2rem;
+    background-color: var(--color2);
+    background-image: url(https://static.foxnews.com/foxnews.com/content/uploads/2019/12/NASAMarsGIF.gif);
+    background-image: center
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(var(--footer-height));
+    text-indent: 12px;
+}
+
+section {
+    background-color: var(--color5);
+    width: 1000px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+    border: solid 4px var(--color1);
+    text-indent: 12px;
+    
+}   
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+}
+
+
+h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.gutter-right {
+    margin-right: 20px;
+}
+
+.main-logo {
+    background-image: url(https://wp.technologyreview.com/wp-content/uploads/2020/09/Cappuccino_swirls_at_Mars_south_pole.jpg?fit=1444,962);
+}
+
+header img {
+    height: var(--header-height);
+}
+
+.button {
+    position: relative;
+    justify-content: center; 
+    height: 95px;
+    width: 200px;
+    font-family: 'Futura' ;
+    font-size: 2rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+    
+
+content {
+    width: 80%;
+    text-indent: 12px;
+}
+
+p {
+    text-indent: 12px;
+    margin: var(--gutter);
+}
+  
+.answers {
+    position: center;
+    justify-content: center;
+    margin-left: relative;
+    margin-top: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+footer {
+    position: fixed;
+    width: 0%;
+    bottom: 0;
+    height: var(--footer-height);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color3);
+    box-shadow: var(--shadow);
+    text-indent: 12px;
+}
+  
+.fade-in {
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
